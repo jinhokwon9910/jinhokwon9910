@@ -2,17 +2,17 @@
 
 [← 프로필로 돌아가기](README.md)
 
-## 1. Unity–ROS 2–Python 기반 UAV Multi-Sensor Real-Time Framework
+## 1. Unity–ROS 2–Python UAV Sensor-Frame Integration
 
-> **상태:** 진행 중
+> **상태:** ROS 2 sensor-frame vertical slice 구현·검증, localization·closed-loop 제어 후속
 >
-> **핵심 분야:** Real-Time System Integration · Sensor Fusion · State Estimation
+> **핵심 분야:** Heterogeneous Runtime Integration · Frame Correlation · Beam Direction Estimation
 >
 > **기술:** Unity 6, C#, ROS 2, Python, YOLO, PyTorch, TensorFlow
 
 ### 프로젝트 목표
 
-Unity의 동적 UAV 시뮬레이션에서 Camera·IMU·UAV state를 생성하고, Python 기반 인식·센서융합·상태추정 알고리즘과 연결합니다. 기존의 파일 단위 후처리 파이프라인을 ROS 2 기반 frame 단위 처리 구조로 전환하는 것이 현재 통합 목표입니다.
+기존 Unity–Python 파일 후처리 파이프라인을 ROS 2 기반 online 경로로 확장했습니다. Unity의 Camera image·noisy UAV pose·Camera orientation·FoV·sequence를 한 message로 전달하고, Python의 YOLO·기하 계산 결과를 같은 source sequence로 Unity에 반환합니다.
 
 ### 현재 구현된 데이터 흐름
 
@@ -33,19 +33,17 @@ FNN 또는 CNN-LSTM 기반 방향 보정
 방향 오차 및 beamforming efficiency 평가
 ```
 
-### ROS 2 통합 후 데이터 흐름
+### 검증한 ROS 2 데이터 흐름
 
 ```text
-Unity 6
- ├─ Camera frame
- ├─ IMU frame
- └─ UAV ground-truth state
-              ↓ ROS 2
-Python nodes
- ├─ YOLO perception
- ├─ MSCKF localization
- ├─ Neural sensor fusion
- └─ Frame-level evaluation
+Unity SensorFrame(N)
+  → ROS-TCP Connector / TCP
+  → ROS-TCP Endpoint / ROS 2 DDS
+  → WSL ROS 2 Python adapter
+  → Windows Conda persistent YOLO worker
+  → pixel-to-bearing / quaternion geometry
+  → BeamDirectionEstimate(source_sequence=N)
+  → Unity sequence match / lockstep 해제 / cyan ray
 ```
 
 ### 직접 구현한 기능
@@ -60,6 +58,10 @@ Python nodes
 - FNN·CNN-LSTM 기반 sensor fusion
 - 방향 오차 및 beam alignment 성능평가
 - 실험 설계, 결과 분석 및 논문 작성
+- `SensorFrame`·`BeamDirectionEstimate` custom message와 Unity C# bridge
+- same-sequence 수락, stale 거부, wall-clock timeout, `Time.timeScale` 복원
+- WSL ROS 2와 Windows Conda YOLO를 분리한 persistent worker 경계
+- ROS graph roundtrip과 Unity–ROS 2–YOLO–Unity 통합 smoke run
 
 ### 주요 입출력
 
@@ -71,18 +73,24 @@ Python nodes
 | Neural fusion | Geometry direction, camera bearing, attitude sequence | 보정된 방향 추정값 |
 | Evaluation | 추정 방향, ground truth | Angular error, beamforming efficiency |
 
-### 현재 구현 중인 항목
+### 현재 검증 범위
 
-- ROS 2 topic/message 및 QoS 설계
-- Unity publisher와 Python subscriber 연결
-- Python 처리 결과의 Unity 반환 경로
-- sensor timestamp 및 coordinate frame 규약
-- raw IMU와 Camera frame 기반 MSCKF localization
-- 처리 지연시간·frame 누락률·ATE/RPE 측정
+- Unity publisher → Python subscriber → Python publisher → Unity subscriber 왕복
+- `source_sequence`에 의한 원본 frame과 결과 correlation
+- Python estimator 측 `RELIABLE`, `VOLATILE`, `KEEP_LAST(1)` QoS
+- 검출 실패 status와 응답 timeout에서 simulation state 복원
+- 실제 YOLO workload 기준 단일 smoke run `STATUS_OK` 3회
+
+### 후속 항목
+
+- FNN·CNN-LSTM 보정의 live callback 통합과 offline regression
+- raw IMU·Camera 기반 MSCKF localization 및 ATE/RPE 평가
+- failure injection과 반복 latency/drop p50·p95 측정
+- 빔 방향과 UAV state를 활용한 action command 및 Unity dynamics 적용
 
 ### 공개 원칙
 
-직접 작성한 코드와 재현 가능한 최소 예제만 공개합니다. 상용 Unity asset, 외부 데이터셋, 대용량 학습 산출물, 로컬 환경정보는 저장소에 포함하지 않습니다.
+직접 작성한 핵심 integration code와 sanitized evidence만 선별해 공개합니다. 상용 Unity asset, 외부 데이터셋, 학습 weight, 로컬 실행환경과 학습용 구축 가이드는 저장소에 포함하지 않습니다.
 
 ---
 
