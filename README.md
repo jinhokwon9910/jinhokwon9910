@@ -14,7 +14,7 @@
 
 | 역량 | 구현 및 연구 경험 |
 |---|---|
-| **실시간 시스템 통합** | Unity 기반 동적 환경과 Python 신호처리 파이프라인 구축, ROS 2 기반 frame 단위 데이터 흐름으로 확장 중 |
+| **실시간 시스템 통합** | Unity–ROS 2–Python sensor-frame 왕복 구현, source sequence·lockstep·timeout 기반 데이터 흐름 검증 |
 | **센서융합·상태추정** | Camera·IMU·UAV state 통합, EKF 및 신경망 기반 추정, MSCKF localization 구현 중 |
 | **좌표계·기하 처리** | Camera local → UAV local → World 좌표변환, 영상 검출 결과의 3차원 방향벡터 변환 |
 | **신호처리 알고리즘** | FMCW Radar, MIMO 채널추정, beamforming, MUSIC·ESPRIT·OMP, model-driven deep learning |
@@ -23,27 +23,29 @@
 
 ## 대표 프로젝트
 
-### Unity–ROS 2–Python 기반 UAV Multi-Sensor Real-Time Framework `진행 중`
+### Unity–ROS 2–Python UAV Sensor-Frame Integration `구현·검증`
 
-Unity 6에서 UAV–기지국 동적 시나리오와 Camera·IMU·UAV state를 생성하고, ROS 2를 통해 Python의 인식·센서융합·상태추정 알고리즘을 frame 단위로 연결하는 프로젝트입니다.
+Unity 6의 UAV Camera image와 noisy pose를 하나의 `SensorFrame`으로 묶고, ROS 2를 거쳐 Python의 YOLO·좌표변환 결과를 같은 source sequence로 Unity에 반환한 online 시스템 통합 프로젝트입니다.
 
-**현재 구현**
+**기존 연구 구현**
 
 - UAV 이동·자세 변화와 jitter/noise를 포함한 Unity 시뮬레이터
 - Camera image, YOLO label, UAV pose·velocity·direction 데이터 생성
 - YOLO 기반 기지국 검출 및 camera–UAV–world 좌표변환
-- FNN·CNN-LSTM 기반 방향 추정 보정과 beam alignment 성능평가
+- FNN·CNN-LSTM 기반 방향 추정 보정과 beam alignment offline 평가
 
-**현재 통합 중**
+**ROS 2 통합에서 검증**
 
-- Unity ↔ ROS 2 ↔ Python 양방향 데이터 흐름
-- timestamp·frame ID·QoS를 포함한 실시간 센서 인터페이스
-- Camera–IMU 기반 MSCKF localization
-- frame latency, 누락률, localization 오차의 end-to-end 평가
+- Unity → ROS-TCP → ROS 2 DDS → Python → Unity 양방향 sensor-frame 왕복
+- WSL ROS node와 기존 Windows Conda YOLO runtime의 process boundary
+- `source_sequence` 일치 검사, stale 결과 거부, simulation pause·복원, timeout
+- 실제 YOLO 경로의 단일 smoke run에서 `STATUS_OK` 3회와 마지막 publish/accept sequence 일치 확인
 
-**직접 기여:** Unity 시나리오 및 센서 데이터 생성, YOLO 학습·추론, 좌표변환, 신경망 sensor fusion, 성능평가, 논문 작성, ROS 2·MSCKF 통합 설계·구현(진행 중)
+**후속 범위:** live FNN·CNN-LSTM, Camera–IMU MSCKF, 반복 latency/drop 평가, 제어명령 적용
 
-[대표 프로젝트 상세 보기](PROJECTS.md#1-unityros-2python-기반-uav-multi-sensor-real-time-framework) · [프로젝트 저장소](https://github.com/jinhokwon9910/uav-multisensor-real-time-framework)
+**직접 기여:** Unity 시나리오·센서 데이터 생성, YOLO 학습·추론, 좌표변환, 신경망 sensor fusion, 성능평가·논문 작성, ROS 2 message/bridge와 heterogeneous runtime 통합
+
+[대표 프로젝트 상세 보기](PROJECTS.md#1-unityros-2python-uav-sensor-frame-integration) · [프로젝트 저장소](https://github.com/jinhokwon9910/uav-multisensor-real-time-framework)
 
 ## 주요 프로젝트·연구
 
