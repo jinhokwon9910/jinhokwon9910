@@ -23,7 +23,7 @@
 | Deep Alternating Direction Networks for UAV-RIS-Assisted Channel Estimation | IEEE Wireless Commun. Lett. | **게재** (2025.11) | 제2저자 |
 | Joint Phase Noise Estimation and Data Decoding with EM-Based Fixed-Point Network | IEEE Trans. Veh. Technol. | **게재** | **공동 제1저자** |
 | Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks | IEEE Trans. Wireless Commun. | 심사 중 | **공동 제1저자** |
-| ISAC 빔포머 최적화 | — | 진행 중 | — |
+| ISAC 빔포머 최적화 | — | 제출 예정 | — |
 | A Multi-Modal Simulator for Aerial Communication with Applications to Beam Search | ICTC 2025 | 발표 | 제1저자 |
 | Denoising Diffusion Probabilistic Models for Channel Estimation | ICTC 2024 | 발표 | 제1저자 |
 
