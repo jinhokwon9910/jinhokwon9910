@@ -2,9 +2,9 @@
 
 [← 프로필로 돌아가기](README.md)
 
-> 최종 갱신: 2026-08-23
+> 최종 갱신: 2026-08-25
 >
-> **†** 는 공동 제1저자를 나타냅니다. 각 항목의 *담당* 은 본인이 직접 수행한 부분입니다.
+> **†** 는 공동 제1저자를 나타냅니다.
 
 ---
 
@@ -13,30 +13,26 @@
 **[J1]** J. Jeon, **J. Kwon**, J. Jung, J. Song, and S. Noh, "Deep Alternating Direction Networks for UAV-RIS-Assisted Channel Estimation," *IEEE Wireless Communications Letters*, vol. 14, no. 11, pp. 3410–3414, Nov. 2025. — **제2저자** · [DOI](https://doi.org/10.1109/LWC.2025.3592730)
 
 > UAV-RIS 환경의 gridless 채널추정을 위해 atomic norm minimization의 ADMM 반복을 신경망으로 전개하고(DADU-Net), learnable fixed-point iteration으로 확장했습니다(DADF-Net).
->
-> *담당:* `<직접 수행한 부분을 1줄로 기입: 예) 시뮬레이션 설계 및 비교기법 구현, spectral shift 모듈 검증>`
 
-**[J2]** J. Jeon**†**, **J. Kwon†**, et al., "Joint Phase Noise Estimation and Data Decoding with Expectation-Maximization-Based Fixed-Point Network," *IEEE Transactions on Vehicular Technology*. — **공동 제1저자** · 게재
+**[J2]** J. Jeon**†**, **J. Kwon†**, et al., "Joint Phase Noise Estimation and Data Decoding with Expectation-Maximization-Based Fixed-Point Network," *IEEE Transactions on Vehicular Technology*. — **공동 제1저자** · **Early Access**
 
 > OFDM 위상잡음 추정과 데이터 복호를 번갈아 수행하는 EM 반복 구조에서 E-step을 신경망 posterior inference로 대체하여, 단일 기법 대비 추정 성능을 개선했습니다.
->
-> *서지정보:* `<vol / no / pp / DOI 확인 후 기입>`
->
-> *담당:* `<직접 수행한 부분을 1줄로 기입>`
 
 **[J3]** J. Jung**†**, **J. Kwon†**, Q. Li, and S. Noh, "Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks," *IEEE Transactions on Wireless Communications*. — **공동 제1저자** · **심사 중**
 
-> 저궤도 위성 링크에서 광대역 배열의 beam squint를 주파수–각도 매핑 자원으로 전환해 단일 아날로그 설정으로 궤도면의 다중 위성을 한 번에 획득하는 rainbow beamforming [R1] 을, 실제 단말에서 성립하는 배열–궤도 오정렬 기하로 확장한 연구입니다.
+> 저궤도 위성 링크에서 광대역 배열의 beam squint를 주파수–각도 매핑 자원으로 전환해 단일 아날로그 설정으로 궤도면의 다중 위성을 한 번에 획득하는 rainbow beamforming [R1]을, 실제 단말에서 성립하는 배열–궤도 오정렬 문제로 확장한 연구입니다.
 >
-> 심사 중인 논문으로 **본문·수식·수치결과·코드는 공개하지 않습니다.** 제목과 저자 기여만 표기합니다.
+> 심사 중인 논문으로 **풀이 방법·수식·수치결과·코드는 공개하지 않습니다.**
 
 **[R1]** J. Park, I. P. Roberts, and W. Shin, "Rainbow Beamforming: One-Shot Acquisition of Multiple Satellites in LEO Non-Terrestrial Networks," *IEEE Transactions on Vehicular Technology*, 2026. *(본 연구의 출발점이 된 선행 연구)*
 
 ---
 
-## 진행 중인 연구
+## 제출 준비 중인 연구
 
-- **ISAC 빔포머 최적화** — 통합 센싱·통신 환경에서의 빔포머 최적화. 진행 중.
+**[W1]** **J. Kwon**, J. Jung, and S. Noh, "ISAC Tx/Rx Hybrid Beamformer Optimization." — **제1저자** · **2026 제출 예정**
+
+> 통합 센싱·통신 환경에서 sensing과 communication 성능을 함께 고려하는 송수신 hybrid beamformer 공동 최적화 연구입니다.
 
 ---
 
@@ -62,8 +58,7 @@ NRF · KIAT · IITP 연구과제 참여
 
 ---
 
-<details>
-<summary><b>학부 과정 활동 (국내학회 · 수상 · 교육)</b></summary>
+## 학부 과정 활동
 
 ### 국내학회 (제1저자 4편)
 
@@ -74,8 +69,10 @@ NRF · KIAT · IITP 연구과제 참여
 
 ### 수상
 
-- 한국통신학회 학부 논문 경진대회 우수상, 2023.06 / 2024.02
-- 한국통신학회 아이디어 경진대회 후원기관상, 2024.06 / 장려상, 2025.02
+- 한국통신학회 학부 논문 경진대회 우수상, 2023.06
+- 한국통신학회 학부 논문 경진대회 우수상, 2024.02
+- 한국통신학회 아이디어 경진대회 후원기관상, 2024.06
+- 한국통신학회 아이디어 경진대회 장려상, 2025.02
 
 ### 교육 · 기타
 
@@ -84,4 +81,3 @@ NRF · KIAT · IITP 연구과제 참여
 - LG Aimers 7기 AI 해커톤 수료, 2025.07–2025.08
 - LG Aimers 8기 AI 해커톤 수료, 2026.01–2026.02
 
-</details>
