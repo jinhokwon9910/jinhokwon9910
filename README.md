@@ -1,73 +1,73 @@
-# 沅뚯쭊??| Jinho Kwon
+# 권진호 | Jinho Kwon
 
-**UAV System Integration 쨌 Model-Driven AI 쨌 Wireless Signal Processing**
+**UAV System Integration · Model-Driven AI · Wireless Signal Processing**
 
-Unity?밨OS 2?밣ython 湲곕컲 UAV ?ㅼ떆媛??꾨젅?꾩썙?щ? 援ы쁽?섍퀬, 諛섎났 ?좏샇泥섎━ ?뚭퀬由ъ쬁??deep unfolding 諛?fixed-point network濡??뺤옣?섎뒗 ?곌뎄瑜??섑뻾?댁솕?듬땲??
+Unity–ROS 2–Python 기반 UAV 실시간 프레임워크를 구현하고, 반복 신호처리 알고리즘을 deep unfolding 및 fixed-point network로 확장하는 연구를 수행해왔습니다.
 
-`IEEE ???2??寃뚯옱` 쨌 `援?젣???1???ъ궗 以? 쨌 `援?젣?숉쉶 3?? 쨌 `援?궡?숉쉶 8?? 쨌 `?뱁뿀 3嫄?異쒖썝 湲곗뿬`
+`IEEE 저널 2편 게재` · `국제저널 1편 심사 중` · `국제학회 3편` · `국내학회 8편` · `특허 3건 출원 기여`
 
 ---
 
 ## Representative Work
 
-### 1. Unity?밨OS 2?밣ython UAV Real-Time Framework
+### 1. Unity–ROS 2–Python UAV Real-Time Framework
 
-**ICTC 2025 ??????곌뎄???꾩냽 援ы쁽 쨌 Unity 6 쨌 ROS 2 쨌 Python 쨌 YOLO**
+**ICTC 2025 제1저자 연구의 후속 구현 · Unity 6 · ROS 2 · Python · YOLO**
 
-ICTC 2025?먯꽌 諛쒗몴??UAV?볤린吏援??ㅼ쨷紐⑤떖 ?쒕??덉씠?곗? beam search ?곌뎄瑜?ROS 2 湲곕컲 online ?묐갑??援ъ“濡??뺤옣?덉뒿?덈떎. Unity??Camera쨌UAV state瑜??섎굹??sensor frame?쇰줈 ?꾨떖?섍퀬, Python??YOLO쨌醫뚰몴蹂?샕룸퉼 諛⑺뼢 ?덉륫 寃곌낵瑜?媛숈? source sequence濡?Unity???ㅼ떆媛?諛섑솚?⑸땲??
+ICTC 2025에서 발표한 UAV–기지국 다중모달 시뮬레이터와 beam search 연구를 ROS 2 기반 online 양방향 구조로 확장했습니다. Unity의 Camera·UAV state를 하나의 sensor frame으로 전달하고, Python의 YOLO·좌표변환·빔 방향 예측 결과를 같은 source sequence로 Unity에 실시간 반환합니다.
 
 ```text
 Unity SensorFrame
-??ROS-TCP / ROS 2 DDS
-??Python YOLO 쨌 Coordinate Transform 쨌 Beam Direction
-??Unity Feedback
+→ ROS-TCP / ROS 2 DDS
+→ Python YOLO · Coordinate Transform · Beam Direction
+→ Unity Feedback
 ```
 
-Sequence ?쇱튂 寃?? stale 寃곌낵 嫄곕?, timeout怨?simulation state 蹂듭썝源뚯? 援ы쁽?섍퀬 ?ㅼ젣 Unity?밨OS 2?밳OLO?밬nity ?뺣났 寃쎈줈瑜?寃利앺뻽?듬땲??
+Sequence 일치 검사, stale 결과 거부, timeout과 simulation state 복원까지 구현하고 실제 Unity–ROS 2–YOLO–Unity 왕복 경로를 검증했습니다.
 
 [Source Code & Evidence](https://github.com/jinhokwon9910/uav-multisensor-real-time-framework)
 
-### 2. Fixed-Point Network 湲곕컲 Phase-Noise Compensation
+### 2. Fixed-Point Network 기반 Phase-Noise Compensation
 
-**IEEE Transactions on Vehicular Technology 쨌 怨듬룞 ?????쨌 寃뚯옱 쨌 ?뱁뿀 1嫄?*
+**IEEE Transactions on Vehicular Technology · 공동 제1저자 · 게재 · 특허 1건**
 
-OFDM ?꾩긽?≪쓬 異붿젙怨??곗씠??蹂듯샇瑜?諛섎났?섎뒗 EM 援ъ“??neural posterior inference? fixed-point termination??寃고빀??model-driven AI ?곌뎄?낅땲??
+OFDM 위상잡음 추정과 데이터 복호를 반복하는 EM 구조에 neural posterior inference와 fixed-point termination을 결합한 model-driven AI 연구입니다.
 
-### 3. Deep Unfolding / Fixed-Point Network 湲곕컲 UAV-RIS Channel Estimation
+### 3. Deep Unfolding / Fixed-Point Network 기반 UAV-RIS Channel Estimation
 
-**IEEE Wireless Communications Letters 쨌 ?????쨌 寃뚯옱 쨌 愿???뱁뿀 2嫄?*
+**IEEE Wireless Communications Letters · 제2저자 · 게재 · 관련 특허 2건**
 
-Atomic norm minimization??ADMM 諛섎났??DADU-Net?쇰줈 ?꾧컻?섍퀬, learnable fixed-point iteration???ъ슜?섎뒗 DADF-Net?쇰줈 ?뺤옣??gridless UAV-RIS 梨꾨꼸異붿젙???뺥솗?꾩? ?뺤옣?깆쓣 ?④퍡 ?ㅻ쨾?듬땲??
+Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnable fixed-point iteration을 사용하는 DADF-Net으로 확장해 gridless UAV-RIS 채널추정의 정확도와 확장성을 함께 다뤘습니다.
 
 [Paper](https://doi.org/10.1109/LWC.2025.3592730)
 
 ### 4. LEO NTN One-Shot Multi-Satellite Acquisition
 
-**IEEE Transactions on Wireless Communications 쨌 怨듬룞 ?????쨌 ?ъ궗 以?*
+**IEEE Transactions on Wireless Communications · 공동 제1저자 · 심사 중**
 
-湲곗〈 rainbow beamforming ?곌뎄媛 愿묐???諛곗뿴??beam squint瑜??댁슜???ㅼ쨷 ?꾩꽦????踰덉뿉 ?띾뱷?섎뒗 臾몄젣瑜??ㅻ，?ㅻ뒗 ?먯뿉??異쒕컻?? ?ㅼ젣 ?⑤쭚?먯꽌 諛쒖깮?섎뒗 諛곗뿴?볤땄???ㅼ젙???섍꼍?쇰줈 ?뺤옣???곌뎄?낅땲??
+기존 rainbow beamforming 연구가 광대역 배열의 beam squint를 이용해 다중 위성을 한 번에 획득하는 문제를 다룬다는 점에서 출발해, 실제 단말에서 발생하는 배열–궤도 오정렬 환경으로 확장한 연구입니다.
 
-> ?ъ궗 以묒씤 ?곌뎄濡????諛⑸쾿, ?섏떇, ?ㅽ뿕 寃곌낵? 肄붾뱶??怨듦컻?섏? ?딆뒿?덈떎.
+> 심사 중인 연구로 풀이 방법, 수식, 실험 결과와 코드는 공개하지 않습니다.
 
 ### 5. ISAC Tx/Rx Hybrid Beamformer Optimization
 
-**?????쨌 ?쒖텧 以鍮?*
+**제1저자 · 제출 준비**
 
-?듯빀 ?쇱떛쨌?듭떊 ?섍꼍?먯꽌 sensing怨?communication ?깅뒫???④퍡 怨좊젮?섎뒗 ?≪닔??hybrid beamformer 怨듬룞 理쒖쟻?붾? ?곌뎄?섍퀬 ?덉뒿?덈떎.
+통합 센싱·통신 환경에서 sensing과 communication 성능을 함께 고려하는 송수신 hybrid beamformer 공동 최적화를 연구하고 있습니다.
 
-### 6. DDPM 湲곕컲 MIMO Channel Estimation
+### 6. DDPM 기반 MIMO Channel Estimation
 
-**ICTC 2024 ?????쨌 KICS 諛쒗몴**
+**ICTC 2024 제1저자 · KICS 발표**
 
-蹂듭냼 MIMO 梨꾨꼸???듦퀎 援ъ“??diffusion forward/reverse process瑜??곸슜???뱀젙 ?숈뒿 SNR??醫낆냽?섏? ?딅뒗 channel denoising 諛?estimation 援ъ“瑜??곌뎄?덉뒿?덈떎.
+복소 MIMO 채널의 통계 구조에 diffusion forward/reverse process를 적용해 특정 학습 SNR에 종속되지 않는 channel denoising 및 estimation 구조를 연구했습니다.
 
 ---
 
 ## Other Research
 
-RIS쨌梨꾨꼸異붿젙, ?덉씠??吏??鍮뷀깘?? FMCW 湲곕컲 珥덇린 鍮?諛⑺뼢 ?먯깋, ?앹꽦紐⑤뜽 湲곕컲 ?좏샇泥섎━ ?깆쓣 二쇱젣濡?**援?궡?숉쉶 ?쇰Ц 8??*??諛쒗몴?덉뒿?덈떎. ?????諛?怨듬룞????ㅼ쟻???ы븿???꾩껜 ?쒖??뺣낫??[Publications 쨌 Patents 쨌 Awards](PUBLICATIONS.md)???뺣━?⑸땲??
+RIS·채널추정, 레이더 지원 빔탐색, FMCW 기반 초기 빔 방향 탐색, 생성모델 기반 신호처리 등을 주제로 **국내학회 논문 8편**을 발표했습니다. 제1저자 및 공동저자 실적을 포함한 전체 서지정보는 [Publications · Patents · Awards](PUBLICATIONS.md)에 정리합니다.
 
-NRF 쨌 KIAT 쨌 IITP ?곌뎄怨쇱젣 李몄뿬 쨌 ?뱁뿀 3嫄?異쒖썝 湲곗뿬
+NRF · KIAT · IITP 연구과제 참여 · 특허 3건 출원 기여
 
 ---
 
@@ -86,5 +86,5 @@ NRF 쨌 KIAT 쨌 IITP ?곌뎄怨쇱젣 李몄뿬 쨌 ?뱁뿀 3嫄?異쒖썝 湲�
 ## Contact
 
 - Email: jino101999@gmail.com
-- Full record: [Publications 쨌 Patents 쨌 Awards](PUBLICATIONS.md)
+- Full record: [Publications · Patents · Awards](PUBLICATIONS.md)
 
