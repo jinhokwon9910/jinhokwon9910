@@ -4,7 +4,7 @@
 
 Unity–ROS 2–Python 기반 UAV 실시간 프레임워크를 구현하고, 반복 신호처리 알고리즘을 deep unfolding 및 fixed-point network로 확장하는 연구를 수행해왔습니다.
 
-`IEEE 저널 2편 게재` · `국제저널 1편 심사 중` · `국제학회 3편` · `국내학회 8편` · `특허 3건 출원 기여`
+`IEEE 저널 2편 게재` · `IEEE 저널 1편 심사 중` · `국제학회 발표 3건(IEEE Xplore 2건 · Recent Results 1건)` · `국내학회 7건(제1·공동 제1저자 4건)` · `특허 3건 출원 기여`
 
 ---
 
@@ -29,9 +29,11 @@ Sequence 일치 검사, stale 결과 거부, timeout과 simulation state 복원�
 
 ### 2. Fixed-Point Network 기반 Phase-Noise Compensation
 
-**IEEE Transactions on Vehicular Technology · 공동 제1저자 · 게재 · 특허 1건**
+**IEEE Transactions on Vehicular Technology · 공동 제1저자 · Early Access · 특허 1건**
 
 OFDM 위상잡음 추정과 데이터 복호를 반복하는 EM 구조에 neural posterior inference와 fixed-point termination을 결합한 model-driven AI 연구입니다.
+
+[Paper](https://ieeexplore.ieee.org/abstract/document/11657521)
 
 ### 3. Deep Unfolding / Fixed-Point Network 기반 UAV-RIS Channel Estimation
 
@@ -41,31 +43,23 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 
 [Paper](https://doi.org/10.1109/LWC.2025.3592730)
 
-### 4. LEO NTN One-Shot Multi-Satellite Acquisition
-
-**IEEE Transactions on Wireless Communications · 공동 제1저자 · 심사 중**
-
-기존 rainbow beamforming 연구가 광대역 배열의 beam squint를 이용해 다중 위성을 한 번에 획득하는 문제를 다룬다는 점에서 출발해, 실제 단말에서 발생하는 배열–궤도 오정렬 환경으로 확장한 연구입니다.
-
-> 심사 중인 연구로 풀이 방법, 수식, 실험 결과와 코드는 공개하지 않습니다.
-
-### 5. ISAC Tx/Rx Hybrid Beamformer Optimization
+### 4. ISAC Tx/Rx Hybrid Beamformer Optimization
 
 **제1저자 · 제출 준비**
 
 통합 센싱·통신 환경에서 sensing과 communication 성능을 함께 고려하는 송수신 hybrid beamformer 공동 최적화를 연구하고 있습니다.
 
-### 6. DDPM 기반 MIMO Channel Estimation
+### 5. DDPM 기반 MIMO Channel Estimation
 
-**ICTC 2024 제1저자 · KICS 발표**
+**ICTC 2024 Recent Results 제1저자 · 포스터 발표(비아카이벌) · KICS 2025 제1저자**
 
-복소 MIMO 채널의 통계 구조에 diffusion forward/reverse process를 적용해 특정 학습 SNR에 종속되지 않는 channel denoising 및 estimation 구조를 연구했습니다.
+복소 MIMO 채널의 통계 구조에 diffusion forward/reverse process를 적용해 특정 학습 SNR에 종속되지 않는 channel denoising 및 estimation 구조를 연구했습니다. ICTC 발표 실적은 정식 proceedings 게재 논문과 구분해 표기합니다.
 
 ---
 
 ## Other Research
 
-RIS·채널추정, 레이더 지원 빔탐색, FMCW 기반 초기 빔 방향 탐색, 생성모델 기반 신호처리 등을 주제로 **국내학회 논문 8편**을 발표했습니다. 제1저자 및 공동저자 실적을 포함한 전체 서지정보는 [Publications · Patents · Awards](PUBLICATIONS.md)에 정리합니다.
+RIS·채널추정, 레이더 지원 빔탐색, FMCW 기반 초기 빔 방향 탐색, 생성모델 기반 신호처리 등을 주제로 **국내학회 논문 7건**을 발표했습니다. 제1저자 및 공동저자 실적을 포함한 전체 서지정보는 [Publications · Patents · Awards](PUBLICATIONS.md)에 정리합니다.
 
 NRF · KIAT · IITP 연구과제 참여 · 특허 3건 출원 기여
 
