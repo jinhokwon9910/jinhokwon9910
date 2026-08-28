@@ -43,13 +43,23 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 
 [Paper](https://doi.org/10.1109/LWC.2025.3592730)
 
-### 4. ISAC Tx/Rx Hybrid Beamformer Optimization
+### 4. Rainbow Beamforming under Array–Orbit Misalignment
+
+**IEEE Transactions on Wireless Communications · 공동 제1저자 · 심사 중**
+
+게재된 선행연구가 제시한 LEO NTN one-shot multi-satellite acquisition을 실제 단말의 array–orbit misalignment 조건으로 확장한 연구입니다. 심사 중인 연구이므로 제목과 연구 관계만 공개하고, 세부 방법·수식·수치결과와 코드는 공개하지 않습니다.
+
+**Submitted manuscript:** “Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks”
+
+**Cited prior work:** J. Park, I. P. Roberts, and W. Shin, “[Beyond Beam Sweeping: One-Shot Satellite Acquisition With Doppler-Aware Rainbow Beamforming](https://doi.org/10.1109/TVT.2026.3675366),” *IEEE Transactions on Vehicular Technology*, 2026.
+
+### 5. ISAC Tx/Rx Hybrid Beamformer Optimization
 
 **제1저자 · 제출 준비**
 
 통합 센싱·통신 환경에서 sensing과 communication 성능을 함께 고려하는 송수신 hybrid beamformer 공동 최적화를 연구하고 있습니다.
 
-### 5. DDPM 기반 MIMO Channel Estimation
+### 6. DDPM 기반 MIMO Channel Estimation
 
 **ICTC 2024 Recent Results 제1저자 · 포스터 발표(비아카이벌) · KICS 2025 제1저자**
 
