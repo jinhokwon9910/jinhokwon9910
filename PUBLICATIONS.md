@@ -48,7 +48,7 @@
 
 ## 국내학회
 
-1. 황석준**†**, **권진호†**, 서경식, 전정원, 노송, “[밀리미터파 대역 지능형 반사 표면 기반 채널 추정 기술 분석](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11227785),” 한국통신학회 동계종합학술발표회, 2023. — **공동 제1저자**
+1. 황석준**†**, **권진호†**, 서경식, 전정원, 노송, “[밀리미터파 대역 지능형 반사 표면 기반 채널 추정 기술 분석](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11227785),” 한국통신학회 동계종합학술발표회, 2023.
 2. **권진호**, 전정원, 황석준, 노송, “[통합 센싱 및 통신 시스템 기반 레이더 지원 빔탐색 기법](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11487193),” 한국통신학회 하계종합학술발표회, 2023. — **제1저자 · 학부 우수 논문상**
 3. **권진호**, 노송, “[FMCW 레이더 기반 초기 빔포밍 방향 탐색](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11737569),” 한국통신학회 동계종합학술발표회, 2024. — **제1저자 · 학부 우수 논문상**
 4. 전정원, **권진호**, 정지혁, 노송, “[비대각 지능형 재구성 반사패턴 및 빔포밍 설계 기술 동향](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11906152),” 한국통신학회 하계종합학술발표회, 2024. — **제2저자**
