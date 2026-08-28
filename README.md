@@ -4,7 +4,7 @@
 
 Unity–ROS 2–Python 기반 UAV 실시간 프레임워크를 구현하고, 반복 신호처리 알고리즘을 deep unfolding 및 fixed-point network로 확장하는 연구를 수행해왔습니다.
 
-`IEEE 저널 2편 게재` · `IEEE 저널 1편 심사 중` · `국제학회 발표 3건(IEEE Xplore 2건 · Recent Results 1건)` · `국내학회 7건(제1·공동 제1저자 4건)` · `특허 3건 출원 기여`
+`IEEE 저널 2편 게재` · `IEEE 저널 1편 심사 중` · `국제학회 발표 3건(IEEE Xplore 2건 · Recent Results 1건)` · `국내학회 7건(제1저자 4건)` · `특허 3건 출원 기여`
 
 ---
 
