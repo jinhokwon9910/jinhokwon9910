@@ -47,7 +47,7 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 
 **IEEE Transactions on Wireless Communications · 공동 제1저자 · 심사 중**
 
-게재된 선행연구가 제시한 LEO NTN one-shot multi-satellite acquisition을 실제 단말의 array–orbit misalignment 조건으로 확장한 연구입니다. 심사 중인 연구이므로 제목과 연구 관계만 공개하고, 세부 방법·수식·수치결과와 코드는 공개하지 않습니다.
+게재된 선행연구가 제시한 LEO NTN one-shot multi-satellite acquisition을 실제 단말의 array–orbit coordinates로 확장한 연구입니다. 심사 중인 연구이므로 제목과 연구 관계만 공개하고, 세부 방법·수식·수치결과와 코드는 공개하지 않습니다.
 
 **Submitted manuscript:** “Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks”
 
