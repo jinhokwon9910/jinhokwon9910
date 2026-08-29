@@ -18,7 +18,7 @@
 
 > OFDM 위상잡음 추정과 데이터 복호를 번갈아 수행하는 EM 반복 구조에서 E-step을 신경망 posterior inference로 대체하여, 단일 기법 대비 추정 성능을 개선했습니다.
 
-**[J3]** J. Jung**†**, **J. Kwon†**, Q. Li, and S. Noh, “Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks,” *IEEE Transactions on Wireless Communications*. — **공동 제1저자 · 심사 중**
+**[J3]** J. Jung†, **J. Kwon†**, Q. Li, and S. Noh, “Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks,” *IEEE Transactions on Wireless Communications*. — **공동 제1저자 · 심사 중**
 
 > 게재된 rainbow beamforming 기반 one-shot satellite acquisition 연구 [R1]을 실제 단말의 array–orbit misalignment 조건으로 확장했습니다. 심사 중인 연구이므로 제목과 연구 관계만 공개하며, 세부 방법·수식·수치결과와 코드는 공개하지 않습니다.
 
