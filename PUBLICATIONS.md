@@ -14,7 +14,7 @@
 
 > UAV-RIS 환경의 gridless 채널추정을 위해 atomic norm minimization의 ADMM 반복을 신경망으로 전개하고(DADU-Net), learnable fixed-point iteration으로 확장했습니다(DADF-Net).
 
-**[J2]** J. Jeon**†**, **J. Kwon†**, J. Jung, J. Lee, and S. Noh, “[Joint Phase Noise Estimation and Data Decoding with Expectation-Maximization-Based Fixed-Point Network](https://ieeexplore.ieee.org/abstract/document/11657521),” *IEEE Transactions on Vehicular Technology*, Early Access, Aug. 2026, doi: 10.1109/TVT.2026.3724612. — **공동 제1저자**
+**[J2]** J. Jeon†, **J. Kwon†**, J. Jung, J. Lee, and S. Noh, “[Joint Phase Noise Estimation and Data Decoding with Expectation-Maximization-Based Fixed-Point Network](https://ieeexplore.ieee.org/abstract/document/11657521),” *IEEE Transactions on Vehicular Technology*, Early Access, Aug. 2026, doi: 10.1109/TVT.2026.3724612. — **공동 제1저자**
 
 > OFDM 위상잡음 추정과 데이터 복호를 번갈아 수행하는 EM 반복 구조에서 E-step을 신경망 posterior inference로 대체하여, 단일 기법 대비 추정 성능을 개선했습니다.
 
