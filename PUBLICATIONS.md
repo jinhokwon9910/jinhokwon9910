@@ -17,6 +17,7 @@
 **[J2]** J. Jeon†, **J. Kwon†**, J. Jung, J. Lee, and S. Noh, “[Joint Phase Noise Estimation and Data Decoding with Expectation-Maximization-Based Fixed-Point Network](https://ieeexplore.ieee.org/abstract/document/11657521),” *IEEE Transactions on Vehicular Technology*, Early Access, Aug. 2026, doi: 10.1109/TVT.2026.3724612. — **공동 제1저자**
 
 > OFDM 위상잡음 추정과 데이터 복호를 번갈아 수행하는 EM 반복 구조에서 E-step을 신경망 posterior inference로 대체하여, 단일 기법 대비 추정 성능을 개선했습니다.
+> 공동저자로써, 신경망 기반 구조 및 데이터 복호 구조를 담당하였으며, 선행 data-driven(AI) 기법들과의 비교분석을 통해 연구에 기여하였습니다.
 
 **[J3]** J. Jung†, **J. Kwon†**, Q. Li, and S. Noh, “Rainbow Beamforming under Array–Orbit Misalignment: One-Shot Multi-Satellite Acquisition in LEO Non-Terrestrial Networks,” *IEEE Transactions on Wireless Communications*. — **공동 제1저자 · 심사 중**
 
@@ -37,13 +38,19 @@
 ## 국제학회 논문 · IEEE Xplore 게재
 
 1. **J. Kwon**, J. Jung, J. Jeon, and S. Noh, “[A Multi-Modal Simulator for Aerial Communication with Applications to Beam Search](https://ieeexplore.ieee.org/abstract/document/11388995),” *2025 16th International Conference on Information and Communication Technology Convergence (ICTC)*, Jeju, Korea, Oct. 2025, pp. 524–525, doi: 10.1109/ICTC66702.2025.11388995. — **제1저자**
+
+>  Unity6기반의 드론-기지국 시뮬레이터를 구축하고, Jittering 및 노이즈 센서 환경에서 카메라 기반 방향추정을 시변 3D-coordinats상에서 수행하였습니다. AI기반의 refinement를 통해 state의 비선형 오차(서로다른 Axis간의 오차발생시 coupling, state추정 오차(속도,가속도등)시 발생하는 비선형 오차)를 보완, 성능을 평가하였습니다.
+
 2. J. Jung, **J. Kwon**, J. Jeon, and S. Noh, “[A Multi-Sensor Simulator for UAV Localization: Kalman Filter-Based Approach](https://ieeexplore.ieee.org/abstract/document/11389103),” *2025 16th International Conference on Information and Communication Technology Convergence (ICTC)*, Jeju, Korea, Oct. 2025, pp. 2095–2096, doi: 10.1109/ICTC66702.2025.11389103. — **제2저자**
 
+>  Unity6기반의 드론-기지국 시뮬레이터 중, 등속-등방향 운동의 드론상황 가정 후, EKF로 localization을 수행하였습니다.
+   
 ## 국제학회 발표 · 비아카이벌
 
 1. **J. Kwon**, J. Jeon, et al., “Denoising Diffusion Probabilistic Models for Channel Estimation,” *ICTC Recent Results*, 2024. — **제1저자 · 포스터 발표 · conference proceedings 및 IEEE Xplore 미게재**
 
-> Recent Results 발표는 연구 수행 및 발표 실적으로 포함하되, 정식 proceedings 게재 논문과 구분해 표기합니다.
+>  Multi-Input Multi-Ouput 환경의 3GPP fading(NLoS) 채널에서, Diffusion-based 모델 기반의 채널추정을 수행하였습니다. Diffusion 확산과정의 학습을 통해, 기존 supervised AI기반의 '학습데이터에 specific한' 특징을 완화하였습니다.
+>  Recent Results 발표는 연구 수행 및 발표 실적으로 포함하되, 정식 proceedings 게재 논문과 구분해 표기합니다.
 
 ---
 
@@ -69,7 +76,7 @@
 
 ## 연구과제 참여
 
-NRF · KIAT · IITP 연구과제 참여
+NRF · KIAT · IITP 연구과제 5건 참여
 
 ---
 
@@ -77,13 +84,13 @@ NRF · KIAT · IITP 연구과제 참여
 
 - 한국통신학회 학부 논문 경진대회 우수상, 2023.06
 - 한국통신학회 학부 논문 경진대회 우수상, 2024.02
-- 한국통신학회 아이디어 경진대회 후원기관상, 2024.06
+- 한국통신학회 아이디어 경진대회 후원기관상(LG U+), 2024.06
 - 한국통신학회 아이디어 경진대회 장려상, 2025.02
 
 ## 교육 · 기타
 
 - 인천대학교 정보기술대학 디지털논리회로 TA, 2023.09–2023.12 *(단과대학 최우수 TA)*
 - 인천대학교 정보기술대학 전자계산기구조 TA, 2024.03–2024.06
-- LG Aimers 7기 AI 해커톤 수료, 2025.07–2025.08
-- LG Aimers 8기 AI 해커톤 수료, 2026.01–2026.02
+- LG Aimers 7기 AI 해커톤 수료, 2025.07–2025.08 (시계열 모델 기반 식료품 매장 매출 예측, LSTM-CNN 기반 방법으로 다중 시계열 데이터 간 correlation 분석하여 성능향상)
+- LG Aimers 8기 AI 해커톤 수료, 2026.01–2026.02 (EXAONE 4.0 40% 경량화 수행, linear-layer quantization으로 용량 확보)
 
