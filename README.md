@@ -27,6 +27,10 @@ Sequence 일치 검사, stale 결과 거부, timeout과 simulation state 복원�
 
 [Source Code & Evidence](https://github.com/jinhokwon9910/uav-multisensor-real-time-framework)
 
+관련 실적(ICTC 2025)
+[Paper1](https://ieeexplore.ieee.org/abstract/document/11388995)
+[Paper2](https://ieeexplore.ieee.org/document/11389103)
+
 ### 2. Fixed-Point Network 기반 Phase-Noise Compensation
 
 **IEEE Transactions on Vehicular Technology · 공동 제1저자 · Early Access · 특허 1건**
@@ -64,6 +68,8 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 **ICTC 2024 Recent Results 제1저자 · 포스터 발표 · KICS 2025 제1저자**
 
 복소 MIMO 채널의 통계 구조에 diffusion forward/reverse process를 적용해 특정 학습 SNR에 종속되지 않는 channel denoising 및 estimation 구조를 연구했습니다. ICTC 발표 실적은 정식 proceedings 게재 논문과 구분하였습니다.
+
+[poster]
 
 ---
 
