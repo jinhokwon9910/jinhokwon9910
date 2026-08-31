@@ -45,7 +45,7 @@
 
 >  Unity6기반의 드론-기지국 시뮬레이터 중, 등속-등방향 운동의 드론상황 가정 후, EKF로 localization을 수행하였습니다.
 
-## 국제학회 발표 · 비아카이벌
+## 국제학회 발표 · recentresult
 
 1. **J. Kwon**, J. Jeon, and S. Noh, “Denoising Diffusion Probabilistic Model for Channel Estimation,” *ICTC 2024 Recent Results*, 2024. — **제1저자 · 포스터 발표** · [발표 포스터 (PDF)](assets/posters/ictc-2024-ddpm-channel-estimation-poster.pdf)
 
