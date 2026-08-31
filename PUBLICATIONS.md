@@ -44,10 +44,10 @@
 2. J. Jung, **J. Kwon**, J. Jeon, and S. Noh, “[A Multi-Sensor Simulator for UAV Localization: Kalman Filter-Based Approach](https://ieeexplore.ieee.org/abstract/document/11389103),” *2025 16th International Conference on Information and Communication Technology Convergence (ICTC)*, Jeju, Korea, Oct. 2025, pp. 2095–2096, doi: 10.1109/ICTC66702.2025.11389103. — **제2저자**
 
 >  Unity6기반의 드론-기지국 시뮬레이터 중, 등속-등방향 운동의 드론상황 가정 후, EKF로 localization을 수행하였습니다.
-   
+
 ## 국제학회 발표 · 비아카이벌
 
-1. **J. Kwon**, J. Jeon, et al., “Denoising Diffusion Probabilistic Models for Channel Estimation,” *ICTC Recent Results*, 2024. — **제1저자 · 포스터 발표 · conference proceedings 및 IEEE Xplore 미게재**
+1. **J. Kwon**, J. Jeon, and S. Noh, “Denoising Diffusion Probabilistic Model for Channel Estimation,” *ICTC 2024 Recent Results*, 2024. — **제1저자 · 포스터 발표** · [발표 포스터 (PDF)](assets/posters/ictc-2024-ddpm-channel-estimation-poster.pdf)
 
 >  Multi-Input Multi-Ouput 환경의 3GPP fading(NLoS) 채널에서, Diffusion-based 모델 기반의 채널추정을 수행하였습니다. Diffusion 확산과정의 학습을 통해, 기존 supervised AI기반의 '학습데이터에 specific한' 특징을 완화하였습니다.
 >  Recent Results 발표는 연구 수행 및 발표 실적으로 포함하되, 정식 proceedings 게재 논문과 구분해 표기합니다.

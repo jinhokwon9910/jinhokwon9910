@@ -65,11 +65,11 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 
 ### 6. DDPM 기반 MIMO Channel Estimation
 
-**ICTC 2024 Recent Results 제1저자 · 포스터 발표 · KICS 2025 제1저자**
+**ICTC 2024 Recent Results · 제1저자 · 포스터 발표**
 
-복소 MIMO 채널의 통계 구조에 diffusion forward/reverse process를 적용해 특정 학습 SNR에 종속되지 않는 channel denoising 및 estimation 구조를 연구했습니다. ICTC 발표 실적은 정식 proceedings 게재 논문과 구분하였습니다.
+복소 MIMO 채널의 통계 구조에 diffusion forward/reverse process를 적용해 특정 학습 SNR에 종속되지 않는 channel denoising 및 estimation 구조를 연구했습니다. ICTC 2024 Recent Results에서 발표했으며 정식 proceedings 게재 논문과 구분합니다.
 
-[poster]
+[ICTC 2024 발표 포스터 보기 (PDF)](assets/posters/ictc-2024-ddpm-channel-estimation-poster.pdf)
 
 ---
 
