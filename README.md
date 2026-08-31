@@ -4,7 +4,7 @@
 
 Unity–ROS 2–Python 기반 UAV 실시간 프레임워크를 구현하고, 반복 신호처리 알고리즘을 deep unfolding 및 fixed-point network로 확장하는 연구를 수행해왔습니다.
 
-`IEEE 저널 2편 게재` · `IEEE 저널 1편 심사 중` · `국제학회 1편 심사 중(IEEE GLOBECOM 2026)` · `국제학회 발표 3건(IEEE Xplore 2건 · Recent Results 1건)` · `국내학회 7건(제1저자 4건)` · `특허 3건 출원 기여`
+`IEEE 저널 2편 게재` · `IEEE 저널 1편 심사 중` · `국제학회 발표 예정 1건(IEEE GLOBECOM 2026)` · `국제학회 발표 3건(IEEE Xplore 2건 · Recent Results 1건)` · `국내학회 7건(제1저자 4건)` · `특허 3건 출원 기여`
 
 ---
 
@@ -59,9 +59,9 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 
 ### 5. Slope-Rescaled Rainbow Beamforming for One-Shot LEO Satellite Acquisition on Off-Plane Passes
 
-**IEEE GLOBECOM 2026 · 공동 제1저자 · 심사 중**
+**IEEE GLOBECOM 2026 · 공동 제1저자 · 발표 예정**
 
-Off-plane LEO pass 환경에서 one-shot satellite acquisition을 위한 slope-rescaled rainbow beamforming을 연구했습니다. 심사 중인 원고이므로 제목과 연구 범위만 공개하며, 세부 방법·수식·수치결과와 코드 및 원고 PDF는 공개하지 않습니다.
+Off-plane LEO pass 환경에서 one-shot satellite acquisition을 위한 slope-rescaled rainbow beamforming을 연구했습니다. 현재는 제목과 연구 범위만 공개하며, 세부 방법·수식·수치결과와 코드 및 원고 PDF는 공개하지 않습니다.
 
 ### 6. ISAC Tx/Rx Hybrid Beamformer Optimization
 
