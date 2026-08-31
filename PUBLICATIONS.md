@@ -27,11 +27,11 @@
 
 ---
 
-## 국제학회 심사 중
+## 국제학회 발표 예정
 
-**[C1]** J. Jung†, **J. Kwon†**, J. Kim, S. Park, E. Cha, and S. Noh, “Slope-Rescaled Rainbow Beamforming for One-Shot LEO Satellite Acquisition on Off-Plane Passes,” submitted to *IEEE GLOBECOM 2026*. — **공동 제1저자 · 심사 중**
+**[C1]** J. Jung†, **J. Kwon†**, J. Kim, S. Park, E. Cha, and S. Noh, “Slope-Rescaled Rainbow Beamforming for One-Shot LEO Satellite Acquisition on Off-Plane Passes,” *IEEE GLOBECOM 2026*. — **공동 제1저자 · 발표 예정**
 
-> Off-plane LEO pass 환경의 one-shot satellite acquisition을 위한 slope-rescaled rainbow beamforming 연구입니다. 심사 중인 원고로 제목과 연구 범위만 공개하며, 세부 방법·수식·수치결과와 코드 및 원고 PDF는 공개하지 않습니다.
+> Off-plane LEO pass 환경의 one-shot satellite acquisition을 위한 slope-rescaled rainbow beamforming 연구입니다. 현재는 제목과 연구 범위만 공개하며, 세부 방법·수식·수치결과와 코드 및 원고 PDF는 공개하지 않습니다.
 
 ---
 
