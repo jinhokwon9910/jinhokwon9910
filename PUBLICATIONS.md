@@ -2,7 +2,7 @@
 
 [← 프로필로 돌아가기](README.md)
 
-> 최종 갱신: 2026-08-29
+> 최종 갱신: 2026-08-31
 >
 > **†** 는 공동 제1저자를 나타냅니다.
 
@@ -24,6 +24,14 @@
 > 게재된 rainbow beamforming 기반 one-shot satellite acquisition 연구 [R1]을 실제 단말의 array–orbit misalignment 조건으로 확장했습니다. 심사 중인 연구이므로 제목과 연구 관계만 공개하며, 세부 방법·수식·수치결과와 코드는 공개하지 않습니다.
 
 **[R1]** J. Park, I. P. Roberts, and W. Shin, “[Beyond Beam Sweeping: One-Shot Satellite Acquisition With Doppler-Aware Rainbow Beamforming](https://doi.org/10.1109/TVT.2026.3675366),” *IEEE Transactions on Vehicular Technology*, 2026. *(J3의 출발점이 된 게재 선행연구)*
+
+---
+
+## 국제학회 심사 중
+
+**[C1]** J. Jung†, **J. Kwon†**, J. Kim, S. Park, E. Cha, and S. Noh, “Slope-Rescaled Rainbow Beamforming for One-Shot LEO Satellite Acquisition on Off-Plane Passes,” submitted to *IEEE GLOBECOM 2026*. — **공동 제1저자 · 심사 중**
+
+> Off-plane LEO pass 환경의 one-shot satellite acquisition을 위한 slope-rescaled rainbow beamforming 연구입니다. 심사 중인 원고로 제목과 연구 범위만 공개하며, 세부 방법·수식·수치결과와 코드 및 원고 PDF는 공개하지 않습니다.
 
 ---
 
