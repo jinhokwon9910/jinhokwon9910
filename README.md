@@ -59,7 +59,7 @@ Atomic norm minimization의 ADMM 반복을 DADU-Net으로 전개하고, learnabl
 
 ### 5. Slope-Rescaled Rainbow Beamforming for One-Shot LEO Satellite Acquisition on Off-Plane Passes
 
-**IEEE GLOBECOM 2026 · 공동 제1저자 · 발표 예정**
+**IEEE GLOBECOM 2026 · 공동 제1저자 · 심사 중**
 
 Off-plane LEO pass 환경에서 one-shot satellite acquisition을 위한 slope-rescaled rainbow beamforming을 연구했습니다. 현재는 제목과 연구 범위만 공개하며, 세부 방법·수식·수치결과와 코드 및 원고 PDF는 공개하지 않습니다.
 
